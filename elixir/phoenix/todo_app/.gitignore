@@ -1,0 +1,40 @@
+# Created by https://www.gitignore.io/api/elixir,erlang,phoenix,osx
+
+
+### Elixir ###
+/ebin
+/deps
+/erl_crash.dump
+
+
+### Erlang ###
+.eunit
+deps
+*.o
+*.beam
+*.plt
+erl_crash.dump
+ebin
+rel/example_project
+.concrete/DEV_MODE
+.rebar
+
+
+### Phoenix ###
+# Phoenix: a web framework for Elixir
+_build/
+/db
+/deps
+/*.ez
+node_modules/
+erl_crash.dump
+/priv/static/
+/config/prod.secret.exs
+
+
+### OSX ###
+.DS_Store
+.AppleDouble
+.LSOverride
+# Thumbnails
+._*
