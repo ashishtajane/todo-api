@@ -40,3 +40,8 @@ config :todo_app, TodoApp.Repo,
   database: "todo_app_dev",
   hostname: "localhost",
   pool_size: 10
+
+config :joken,
+  # Environment specific secret key for signing tokens.
+  # This should be a very long random string.
+  secret_key: "BbHBR48NiLgtbibrS3U/+HPUklR/9j1L94GlyfPdKZ3+G+91xhrgrZv7zxejlaZU"

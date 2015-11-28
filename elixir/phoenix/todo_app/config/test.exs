@@ -17,3 +17,8 @@ config :todo_app, TodoApp.Repo,
   database: "todo_app_test",
   hostname: "localhost",
   pool: Ecto.Adapters.SQL.Sandbox
+
+config :joken,
+  # Environment specific secret key for signing tokens.
+  # This should be a very long random string.
+  secret_key: "qoLEPAKmZDjUXgf6YjTCxLrlPxjRdKHxLdWYGdZGqO1Fdyfqygd5/I8T7Mn0zh5a"

@@ -13,7 +13,7 @@ defmodule TodoApp.User do
     timestamps
   end
 
-  @required_fields ~w(email hashed_password)
+  @required_fields ~w(email)
   @optional_fields ~w()
 
   @doc """
