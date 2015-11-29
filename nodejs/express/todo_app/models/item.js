@@ -1,12 +1,17 @@
 'use strict';
-
 module.exports = function(sequelize, DataTypes) {
-  var Item = sequelize.define("Item", {
+  var Item = sequelize.define('Item', {
     text: DataTypes.STRING,
-    done: DataTypes.BOOLEAN
+    done: {
+      type: DataTypes.BOOLEAN,
+      defaultValue: false
+    }
   }, {
-    classMethods: {}
+    classMethods: {
+      associate: function(models) {
+        // associations can be defined here
+      }
+    }
   });
-
   return Item;
 };
