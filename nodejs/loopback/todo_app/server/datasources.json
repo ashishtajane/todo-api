@@ -2,5 +2,14 @@
   "db": {
     "name": "db",
     "connector": "memory"
+  },
+  "pgdb": {
+    "name": "pgdb",
+    "connector": "postgresql",
+    "host": "127.0.0.1",
+    "port": 5432,
+    "database": "loopback_todo_app_dev",
+    "username": "ashish",
+    "password": "ashish"
   }
 }
