@@ -1,0 +1,19 @@
+default: &default
+  adapter: postgresql
+  pool: 5
+  timeout: 5000
+  encoding: unicode
+  username: ashish
+  password: ashish
+
+development:
+  <<: *default
+  database: rails_todo_app_dev
+
+test:
+  <<: *default
+  database: rails_todo_app_test
+
+production:
+  <<: *default
+  database: rails_todo_app_prod
